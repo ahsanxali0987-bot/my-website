@@ -1,0 +1,56 @@
+import React from "react";
+import { SearchSectionData } from "../../data/home/SearchSectionData";
+
+const RecommendedProductsSection = () => {
+  return (
+    <div className="max-w-[1280px] mx-auto px-5 md:px-10 py-10">
+      <div className="flex justify-between items-center mb-6">
+        <p className="text-xl font-[500] text-[#404040]">
+          Recommended Products
+        </p>
+      </div>
+      <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 md:gap-4">
+        {SearchSectionData.map((item) => (
+          <div
+            key={item.id}
+            className="bg-white rounded-md p-4 flex flex-col justify-between cursor-pointer"
+          >
+            <div className="flex justify-center mb-4 overflow-hidden">
+              <img
+                src={item.image}
+                alt={item.title}
+                className="w-16 h-16 md:w-32 md:h-32 object-contain"
+              />
+            </div>
+            <h3 className="text-[11px] md:text-[14px] text-gray-800 mb-2 line-clamp-2 h-10 overflow-hidden leading-tight font-medium">
+              {item.title}
+            </h3>
+            <div className="flex justify-between md:flex-col">
+              <h2 className="font-semibold md:font-bold text-[14px] md:text-[20px] text-[#202020]">
+                <span className="text-sm font-normal">Rs</span>{" "}
+                {item.price.toLocaleString()}
+              </h2>
+              <div className="flex justify-between items-center mt-1">
+                <del className="text-gray-400 text-xs hidden md:block">
+                  Rs {item.oldPrice?.toLocaleString()}
+                </del>
+                <span className="text-[#1fb789] text-[5px] md:text-[10px] bg-[#e9f8f3] px-1 md:px-2 py-0.5 rounded-full font-bold">
+                  {item.discount}% OFF
+                </span>
+              </div>
+            </div>
+            <div className="mt-3 pt-3 border-t border-gray-50">
+              <img
+                src="https://static.priceoye.pk/images/badges/fast-delivery.svg"
+                alt="Fast Delivery"
+                className="w-20"
+              />
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default RecommendedProductsSection;

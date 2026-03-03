@@ -1,0 +1,89 @@
+import React from "react";
+import { BestSellerSectionData } from "../../data/home/BestSellerSection";
+import { FaStar } from "react-icons/fa";
+
+const BestSellerSection = () => {
+  return (
+    <div className="max-w-[1195px] mx-auto px-4 sm:px-4 md:px-6 lg:px-8">
+      <div className="text-center text-[#404040]">
+        <p className="font-semibold text-lg text-[#404040]">Best Seller</p>
+        <p className="text-[#404040]">Get the best prices in town</p>
+      </div>
+      <div className="my-8 grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <article className="bg-white rounded-lg p-5">
+          <div className="flex items-center gap-2 mb-3">
+            <img
+              src="https://images.priceoye.pk/badges/priceoye-sale-20260107-94x7e.png"
+              alt=""
+              className="w-12 h-3 object-contain"
+            />
+            <p className="text-sm font-semibold text-gray-700">
+              Tecno spark 40
+            </p>
+          </div>
+          <img
+            src="https://images.priceoye.pk/tecno-spark-40-pakistan-priceoye-t2m4m-500x500.webp"
+            alt=""
+            className="max-w-[300px] mx-auto my-6"
+          />
+          <div className="inline-flex items-center gap-1 bg-[#fbf7eb] text-xs px-2 py-1 rounded-md mb-4">
+            <FaStar className="text-[#ffc107]" />
+            <span className="font-semibold text-[12px]">4.8</span>
+            <span className="text-[#040428] text-[11px] font-semibold pt-[2px]">
+              33 Reviews
+            </span>
+          </div>
+          <div className="flex justify-between items-center">
+            <p className="font-semibold text-xl">
+              <span className="text-base">Rs </span>31,999
+            </p>
+            <span className="text-green-600 text-xs bg-green-50 px-2 py-1 rounded-md font-medium">
+              11% OFF
+            </span>
+          </div>
+        </article>
+        <article className="grid grid-cols-2 gap-4">
+          {BestSellerSectionData.map((card, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-lg p-4 flex flex-col justify-between pb-8 overflow-hidden"
+            >
+              <div className="flex flex-col md:flex-row justify-between gap-2">
+                <div>
+                  <p className="text-sm font-semibold text-gray-700 leading-tight">
+                    {card.title}
+                  </p>
+                </div>
+                <div className="flex justify-center">
+                  <img
+                    src={card.image}
+                    alt=""
+                    className="w-24 md:w-36 h-24 md:h-36 object-contain"
+                  />
+                </div>
+              </div>
+              <div className="inline-flex items-center gap-1 bg-[#fff7e6] text-xs  px-2 py-1 rounded-md w-28 mt-2">
+                <FaStar className="text-[#ffc107]" />
+                <span className="font-semibold text-[12px]">{card.rating}</span>
+                <span className="text-[#040428] text-[11px] font-semibold pt-[2px]">
+                  {card.reviews} Reviews
+                </span>
+              </div>
+              <div className="flex justify-between items-center mt-3">
+                <p className="font-semibold">
+                  <span className="text-sm">Rs </span>
+                  {card.price}
+                </p>
+                <span className="text-green-600 text-xs bg-green-50 px-2 py-1 rounded-md font-medium">
+                  {card.discount}
+                </span>
+              </div>
+            </div>
+          ))}
+        </article>
+      </div>
+    </div>
+  );
+};
+
+export default BestSellerSection;

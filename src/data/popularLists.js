@@ -1,0 +1,18 @@
+export const popularLists = [
+    "Best Mobiles Under 10000",
+    "Best Mobiles Under 15000",
+    "Best Mobiles Under 20000",
+    "Best Mobiles Under 30000",
+    "Best Mobiles Under 40000",
+    "Best Mobiles Under 50000",
+    "Best Mobiles Under 60000",
+    "Best Mobiles Under 80000",
+    "Best Mobiles Under 100000",
+    "Best 5G Phones",
+    "Best Camera Phones",
+    "Best Selfie Camera Phones",
+    "Best PUBG Phones",
+    "Most Expensive Phones",
+    "Top 10 Fast Charging Phones",
+    "Best Mobiles of 2025",
+]

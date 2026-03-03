@@ -1,0 +1,51 @@
+export const XiaomiDealsSectionData = [
+  {
+    src: "https://images.priceoye.pk/xiaomi-redmi-pad-2-8-256-wifi-1-year-warranty-pakistan-priceoye-82efz-270x270.webp",
+    h1: "Xiaomi Redmi Pad 2 Wifi 1 Year Warranty",
+    h2: "Rs 55,900",
+    h3: "Rs 79,999",
+    h4: "30% OFF",
+  },
+  {
+    src: "https://images.priceoye.pk/xiaomi-smart-air-purifier-4-lite-filter-pro-pakistan-priceoye-yvkpo-270x270.webp",
+    h1: "Xiaomi Smart Air Purifier 4 Lite Filter Pro",
+    h2: "Rs 10,799",
+    h3: "Rs 21,000",
+    h4: "49% OFF",
+  },
+  {
+    src: "https://images.priceoye.pk/xiaomi-15t-pro-pakistan-priceoye-54bj6-270x270.webp",
+    h1: "Xiaomi 15T",
+    h2: "Rs 157,999",
+    h3: "Rs 169,999",
+    h4: "7% OFF",
+  },
+  {
+    src: "https://images.priceoye.pk/xiaomi-redmi-pad-2-8-256-wifi-pakistan-priceoye-uh13s-270x270.webp",
+    h1: "Xiaomi Redmi Pad 2 8/256",
+    h2: "Rs 55,499",
+    h3: "Rs 64,999",
+    h4: "15% OFF",
+  },
+  {
+    src: "https://images.priceoye.pk/xiaomi-pb2020mi-20000mah-22-5w-fast-charging-built-in-cable-power-bank-pakistan-priceoye-2p2ic-270x270.webp",
+    h1: "Xiaomi PB2020MI 20000mAh 22.5W Fast Charging Built-in Cable Power...",
+    h2: "Rs 6,499",
+    h3: "Rs 12,000",
+    h4: "46% OFF",
+  },
+  {
+    src: "https://images.priceoye.pk/xiaomi-redmi-15-pakistan-priceoye-se2kc-270x270.webp",
+    h1: "Xiaomi Redmi 15",
+    h2: "Rs 40,449",
+    h3: "Rs 45,999",
+    h4: "12% OFF",
+  },
+  {
+    src: "https://images.priceoye.pk/xiaomi-smart-air-purifier-4-lite-filter-pakistan-priceoye-p3q2a-500x500.webp",
+    h1: "Xiaomi Smart Air Purifier Elite Filter",
+    h2: "Rs 14,799",
+    h3: "Rs 29,000",
+    h4: "49% OFF",
+  },
+];
