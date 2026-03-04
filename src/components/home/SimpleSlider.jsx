@@ -37,7 +37,7 @@ const SimpleSlider = () => {
   };
 
   return (
-    <div className="bg-white h-[85px] px-4">
+    <div className="bg-white h-[85px] px-8">
       <div className="max-w-[1210px] mx-auto relative">
         <Slider {...settings}>
           {categories.map((cat) => (
@@ -45,7 +45,7 @@ const SimpleSlider = () => {
               key={cat.name}
               className="cursor-pointer group hover:bg-[#f1f3f6] hover:border-b-2 hover:border-[#48afff]"
             >
-              <div className="flex flex-col items-center py-2 text-center">
+              <div className="flex flex-col items-center justify-center text-center py-[8px]">
                 <img
                   src={cat.img}
                   alt={cat.name}
