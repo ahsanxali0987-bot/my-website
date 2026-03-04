@@ -15,7 +15,7 @@ import XiaomiDealsSection from "../components/home/XiaomiDealsSection";
 import RelatedCategoriesBar from "./RelatedCategoriesBar";
 import RecommendedProductsSection from "../components/home/RecommendedProductsSection";
 import TrustBadgesSection from "../components/home/TrustBadgesSection";
-import Footer from "../components/common/Footer";
+import Footer from "../components/home/Footer";
 import MobileFooter from "../components/home/MobileFooter";
 
 const HomePage = () => {
